@@ -29,4 +29,9 @@ public class UserController {
 	public void createUser(@Valid @RequestBody User user) {
 		userService.create(user);
 	}
+
+	@RequestMapping(method = RequestMethod.GET,value = "/test")
+	public String test() {
+		return "SUCCESS";
+	}
 }

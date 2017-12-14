@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.security.Principal;
 
+/**
+ * @author goujy
+ */
 @RestController
 public class AccountController {
 
@@ -35,5 +38,10 @@ public class AccountController {
 	@RequestMapping(path = "/", method = RequestMethod.POST)
 	public Account createNewAccount(@Valid @RequestBody User user) {
 		return accountService.create(user);
+	}
+
+	@RequestMapping(path = "/testFeign")
+	public String testFeign() {
+		return "OK--"+ accountService.testFeign();
 	}
 }

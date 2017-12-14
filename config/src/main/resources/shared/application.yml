@@ -24,4 +24,4 @@ security:
 
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: 127.0.0.1
