@@ -18,6 +18,7 @@ function requestOauthToken(username, password) {
 		datatype: 'json',
 		type: 'post',
 		headers: {'Authorization': 'Basic YnJvd3Nlcjo='},
+		contentType: 'application/x-www-form-urlencoded',
 		async: false,
 		data: {
 			scope: 'ui',
