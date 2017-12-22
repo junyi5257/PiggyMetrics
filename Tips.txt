@@ -1,1 +1,5 @@
 tips
+
+gatWay 下:  requestOauthToken方法的Js请求，添加请求类型
+
+    contentType: 'application/x-www-form-urlencoded',
