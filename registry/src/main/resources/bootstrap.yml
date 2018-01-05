@@ -10,7 +10,8 @@ spring:
 
 eureka:
   instance:
-    prefer-ip-address: true
+    preferIpAddress: false
+    #ipAddress: 59.110.217.87
   client:
     registerWithEureka: false
     fetchRegistry: false

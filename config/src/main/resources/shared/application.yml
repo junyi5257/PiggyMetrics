@@ -12,7 +12,7 @@ hystrix:
 
 eureka:
   instance:
-    prefer-ip-address: true
+    preferIpAddress: false
   client:
     serviceUrl:
       defaultZone: http://registry:8761/eureka/
